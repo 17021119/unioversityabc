@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="shortcut icon" href="../images/logo.ico" />
+	<meta charset="utf-8">
+	<script type="text/javascript" src="login.js"></script>
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script> 
+</head>
+<body>
+	
+	<div class="loginbox">
+		<img src="../images/avatar.jpg" class="avatar">
+		<h1>Đăng nhập</h1>
+		<form>
+			<p>Tài khoản:</p>
+			<input type="text" name="username" placeholder="Nhập tài khoản..." id="username">
+			<p>Mật khẩu:</p>
+			<input type="password" name="password" placeholder="Nhập mật khẩu..." id="password">
+			<input type="submit" name="" value="Đăng nhập"><br>
+			<button type="button" onclick="getInfo()">Click me</button>
+			<a href="#"> Quên tài khoản?</a>
+
+		</form>
+	</div>
+
+	<div id="welcome">
+		<div id="welcomeLogo">
+			<img src="../images/logo.png">
+		</div>
+		<div id="welcomeTitle">
+				CỔNG THÔNG TIN ĐĂNG KÍ DỰ THI
+		</div>
+	</div>
+
+	<div id="footer">
+		<p>
+			Cổng thông tin đăng kí dự thi trường đại học ABC <br>
+			Phát triển bởi team tia chớp<br>
+			144 Xuân Thủy, Cầu Giấy, Hà Nội 
+		</p>
+	</div>
+	<script type="text/javascript">
+		 $("input:text").focus();// đặt con trở chuột vào 'username' khi load page
+	</script>
+</body>
+</html>
